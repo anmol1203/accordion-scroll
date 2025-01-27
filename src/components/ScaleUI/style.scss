@@ -390,11 +390,14 @@ body::-webkit-scrollbar {
   }
 
   .usp-columns {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; 
-    gap: 15px; 
-    height: auto;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    overflow: visible;
   }
 
   .usp-column {
@@ -486,9 +489,17 @@ body::-webkit-scrollbar {
   .usp-image {
     margin-top: 0px;
   }
+
+  .beautiful-card2{
+    margin-top: 30%;
+  }
 }
 
 @media (max-width: 480px) {
+  .ups-container-outer{
+    height: 200vh;
+  }
+  
   .usp-container {
     overflow-x: hidden;
     margin: auto;
@@ -539,7 +550,10 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 376px) {
+.ups-container-outer{
+  height: 200vh;
+}
 .beautiful-card2{
-  margin-top: 65%;
+  margin-top: 50%;
 }
 }
