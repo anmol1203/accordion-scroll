@@ -135,7 +135,7 @@ body::-webkit-scrollbar {
     transition: all 1s ease;
     &.active {
       transform: rotate(90deg) translate(0%, 0%);
-      color: black; 
+      color: black;
     }
   }
   .heading-line {
@@ -373,7 +373,7 @@ body::-webkit-scrollbar {
 
   .usp-header {
     text-align: center;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     margin-bottom: 15px;
   }
 
@@ -382,10 +382,10 @@ body::-webkit-scrollbar {
     overflow-y: auto;
     height: auto;
     margin: 0 auto;
-    padding: 20px; 
+    padding: 20px;
   }
 
-  .ups-container-outer{
+  .ups-container-outer {
     height: 140vh;
   }
 
@@ -393,17 +393,18 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
     gap: 15px;
     height: 100%;
     width: 100%;
     overflow: visible;
+    margin: auto;
   }
 
   .usp-column {
-    flex: 1 1 48%; 
+    flex: 1 1 48%;
     max-width: 48%;
-    height: 350px; 
+    height: 350px;
     margin: 0 auto;
     padding: 10px;
   }
@@ -414,14 +415,14 @@ body::-webkit-scrollbar {
   }
 
   .usp-content .para {
-    font-size: 0.9rem; 
-    line-height: 1.4; 
-    padding: 8px 10px; 
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 8px 10px;
   }
 
   .usp-content .heading-line {
     margin-top: 50px;
-    height: 2px; 
+    height: 2px;
   }
 
   .usp-column .checkbox {
@@ -431,8 +432,11 @@ body::-webkit-scrollbar {
   }
 }
 
-
 @media (max-width: 768px) {
+  .ups-container-outer {
+    width: 100%;
+  }
+
   .beautiful-card {
     width: 100%;
     border-radius: 0;
@@ -448,6 +452,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     flex-wrap: nowrap;
     height: auto;
+    margin: auto;
   }
 
   .usp-column {
@@ -490,16 +495,18 @@ body::-webkit-scrollbar {
     margin-top: 0px;
   }
 
-  .beautiful-card2{
+  .beautiful-card2 {
     margin-top: 30%;
   }
 }
 
 @media (max-width: 480px) {
-  .ups-container-outer{
+  .ups-container-outer {
     height: 200vh;
+    margin: 0px;
+    width: 100%;
   }
-  
+
   .usp-container {
     overflow-x: hidden;
     margin: auto;
@@ -550,10 +557,11 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 376px) {
-.ups-container-outer{
-  height: 200vh;
-}
-.beautiful-card2{
-  margin-top: 50%;
-}
+  .ups-container-outer {
+    height: 215vh;
+    width: 100%;
+  }
+  .beautiful-card2 {
+    margin-top: 50%;
+  }
 }
